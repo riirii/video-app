@@ -1,0 +1,51 @@
+* {
+  box-sizing: border-box;
+}
+.top-page-header {
+  background-color: rgba(0, 0, 0, 0.74);
+  height: 10vh;
+  width: 100vw;
+  padding: 2vh 10vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* flex-direction: column; */
+}
+.title{
+  /* background-color: red; */
+  color: #fff;
+  font-size: 45px;
+  font-style:
+
+  /* margin-top: 20px; */
+}
+
+.status {
+margin-top: 5px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+position: relative;
+}
+
+
+.sign-in{
+  position: absolute; top: 3px; left: 85px;
+  color: black;
+}
+
+.sign-up{
+  position: absolute; top: 3px; left: 274px;
+  color: black;
+}
+
+li{
+margin-left: 40px;
+/* display: block; */
+/* margin-top: 20px; */
+}
+
+
+a{
+  text-decoration: none;
+}
