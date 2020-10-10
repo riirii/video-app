@@ -1,48 +1,184 @@
-* {
-  box-sizing: border-box;
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+       -o-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
 .top-page-header {
-  background-color: rgba(0, 0, 0, 0.74);
+  background: linear-gradient(to right top, black, gray, black);
   height: 10vh;
   width: 100vw;
-  padding: 2vh 10vw;
+  /* padding: 2vh 10vw; */
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   /* flex-direction: column; */
 }
 .title{
-  /* background-color: red; */
   color: #fff;
   font-size: 45px;
   font-style:
-
-  /* margin-top: 20px; */
+  height: 10vh;
+  width: 40vw;
+  padding-left: 40px;
 }
 
-.status {
-margin-top: 5px;
+.nav{
+  height: 10vh;
+  width: 60vw;
+}
+
+.status-ok {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  }
+
+.user-nickname{
+  position: relative;
+  width: 12vw;
+}
+
+.nickname-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.log-out{
+  position: relative;
+  width: 12vw;
+}
+
+.logout-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.chat-room{
+  position: relative;
+  width: 12vw;
+}
+
+.chat-page{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.video-room{
+  position: relative;
+  width: 12vw;
+}
+
+.video-page{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.memo-room{
+  position: relative;
+  width: 12vw;
+}
+
+.memo-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+
+.button-ok{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
+
+.status-ng {
 display: flex;
-justify-content: space-around;
+justify-content: center;
 align-items: center;
-position: relative;
+height: 10vh;
 }
 
 
 .sign-in{
-  position: absolute; top: 3px; left: 85px;
-  color: black;
+  position: relative;
+  width: 25vw;
+  height: 10vh;
+  
+}
+
+.button-in{
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.in-text{
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 .sign-up{
-  position: absolute; top: 3px; left: 274px;
-  color: black;
+  position: relative;
+  width: 25vw;
+  height: 10vh;
 }
 
-li{
-margin-left: 40px;
-/* display: block; */
-/* margin-top: 20px; */
+.button-up{
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.up-text{
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 }
 
 
