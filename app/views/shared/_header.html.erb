@@ -4,22 +4,70 @@
   </div>
   <div class='nav'>
     <% if user_signed_in? %>
-      <ul class='status'>
-        <li><%= link_to current_user.nickname, "#", class: "user-nickname" %></li> 
-        <li><%= link_to 'ログアウト',"#" , method: :delete, class: "logout" %></li> 
+      <ul class='status-ok'>
+        <div class ="user-nickname">
+          <div class ="position">
+            <li><%= link_to edit_group_path(current_user.id), class: "name" do %>
+              <%= image_tag 'btn053_03.jpg',size:"100x30",class: "button-ok" %>
+              <span class='nickname-text'><%= current_user.nickname %></span>
+            <% end %>
+            </li> 
+          </div>
+        </div>
+        <div class ="log-out">
+          <div class ="position">
+            <li><%= link_to  group_path(current_user.id), method: :delete, class: "out" do %>
+              <%= image_tag 'btn053_03.jpg',size:"100x30",class: "button-ok" %>
+              <span class='logout-text'>ログアウト</span>
+            <% end %>
+            </li> 
+          </div>
+        </div>
+        <div class ="chat-room">
+          <div class ="position">
+            <li><%= link_to "#", class: "chat" do %>
+              <%= image_tag 'btn053_03.jpg',size:"100x30",class: "button-ok" %>
+              <span class='chat-page'>チャット</span>
+            <% end %>
+            </li> 
+          </div>
+        </div>
+         <div class ="video-room">
+          <div class ="position">
+            <li><%= link_to "#", class: "video" do %>
+              <%= image_tag 'btn053_03.jpg',size:"100x30",class: "button-ok" %>
+              <span class='video-page'>ビデオ通話</span>
+            <% end %>
+            </li> 
+          </div> 
+        </div>
+         <div class ="memo-room">
+          <div class ="position">
+            <li><%= link_to "#", class: "memo" do %>
+              <%= image_tag 'btn053_03.jpg',size:"100x30",class: "button-ok" %>
+              <span class='memo-text'>メモ</span>
+            <% end %>
+            </li> 
+          </div>
+        </div>
       </ul>
     <% else %>
-      <ul class='status'>
-        <li><%= link_to "#", class: "login" do %>
-          <%= image_tag 'btn053_03.jpg',size:"150x30" %>
-          <span class='sign-in'>ログイン</span>
-        <% end %>
-        </li>
-        <li><%= link_to "#", class: "new" do %>
-          <%= image_tag 'btn053_03.jpg',size:"150x30" %>
-          <span class='sign-up'>新規登録</span>
-        <% end %>
-        </li>
+      <ul class='status-ng'>
+        <div class ="sign-in">
+          <li><%= link_to new_user_session_path, class:"load" do %>
+              <%= image_tag 'btn053_03.jpg',size:"150x30",class: "button-in" %>
+            <span class='in-text'>ログイン</span>
+          <% end %>
+          </li>
+        </div>
+
+        <div class="sign-up">
+          <li><%= link_to "#", class: "new" do %>
+              <%= image_tag 'btn053_03.jpg',size:"150x30",class: "button-up" %>
+            <span class='up-text'>新規登録</span>
+          <% end %>
+          </li>
+        </div>
       </ul>
     <% end %>     
   </div>
