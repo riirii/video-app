@@ -7,28 +7,31 @@
           list-style: none;
 }
 
+
+
 .top-page-header {
   background: linear-gradient(to right top, black, gray, black);
   height: 10vh;
-  width: 100vw;
-  /* padding: 2vh 10vw; */
+  width: 100%;
+  padding: 2vh 2vw; 
   display: flex;
   justify-content: space-between;
   align-items: center;
   /* flex-direction: column; */
 }
 
-.title{
+.title-name{
   color: #fff;
   font-size: 45px;
-  /* height: 10vh; */
-  /* width: 40vw; */
-  margin-left: 40px;
+  height: 10vh;
+  width: 40%;
+  padding-top:0.8vh;
 }
 
 .nav{
   height: 10vh;
-  width: 60vw;
+  width: 60%;
+  font-size: 15px;
 }
 
 .status-ok {
@@ -40,7 +43,7 @@
 
 .user-nickname{
   position: relative;
-  width: 12vw;
+  width: 12%;
 }
 
 .nickname-text{
@@ -50,11 +53,12 @@
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
+    font-size: large;
 }
 
 .log-out{
   position: relative;
-  width: 12vw;
+  width: 12%;
 }
 
 .logout-text{
@@ -64,11 +68,13 @@
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  font-size: 15px;  	
+  white-space: nowrap;
 }
 
 .chat-room{
   position: relative;
-  width: 12vw;
+  width: 12%;
 }
 
 .chat-page{
@@ -78,11 +84,12 @@
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  white-space: nowrap;
 }
 
 .video-room{
   position: relative;
-  width: 12vw;
+  width: 12%;
 }
 
 .video-page{
@@ -92,11 +99,12 @@
   transform: translate(-50%, -50%);
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  white-space: nowrap;
 }
 
 .memo-room{
   position: relative;
-  width: 12vw;
+  width: 12%;
 }
 
 .memo-text{
@@ -135,7 +143,7 @@ height: 10vh;
 
 .sign-in{
   position: relative;
-  width: 25vw;
+  width: 25%;
   height: 10vh;
 }
 
@@ -159,7 +167,7 @@ height: 10vh;
 
 .sign-up{
   position: relative;
-  width: 25vw;
+  width: 25%;
   height: 10vh;
 }
 
@@ -185,3 +193,4 @@ height: 10vh;
 a{
   text-decoration: none;
 }
+

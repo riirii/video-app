@@ -1,5 +1,5 @@
 <header class='top-page-header'>
-  <div class = "title">
+  <div class = "title-name">
     <h1>Transcribe</h1>
   </div>
   <div class='nav'>
@@ -8,7 +8,7 @@
         <div class ="user-nickname">
           <div class ="position">
             <li><%= link_to edit_group_path(current_user.id), class: "name" do %>
-              <%= image_tag 'btn053_03.jpg',size:"100x30",class: "button-ok" %>
+              <%= image_tag 'btn053_03.jpg',size:"110x40",class: "button-ok" %>
               <span class='nickname-text'><%= current_user.nickname %></span>
             <% end %>
             </li> 
@@ -17,7 +17,7 @@
         <div class ="log-out">
           <div class ="position">
             <li><%= link_to  group_path(current_user.id), method: :delete, class: "out" do %>
-              <%= image_tag 'btn053_03.jpg',size:"100x30",class: "button-ok" %>
+              <%= image_tag 'btn053_03.jpg',size:"110x40",class: "button-ok" %>
               <span class='logout-text'>ログアウト</span>
             <% end %>
             </li> 
@@ -26,7 +26,7 @@
         <div class ="chat-room">
           <div class ="position">
             <li><%= link_to "#", class: "chat" do %>
-              <%= image_tag 'btn053_03.jpg',size:"100x30",class: "button-ok" %>
+              <%= image_tag 'btn053_03.jpg',size:"110x40",class: "button-ok" %>
               <span class='chat-page'>チャット</span>
             <% end %>
             </li> 
@@ -35,7 +35,7 @@
          <div class ="video-room">
           <div class ="position">
             <li><%= link_to "#", class: "video" do %>
-              <%= image_tag 'btn053_03.jpg',size:"100x30",class: "button-ok" %>
+              <%= image_tag 'btn053_03.jpg',size:"110x40",class: "button-ok" %>
               <span class='video-page'>ビデオ通話</span>
             <% end %>
             </li> 
@@ -44,7 +44,7 @@
          <div class ="memo-room">
           <div class ="position">
             <li><%= link_to "#", class: "memo" do %>
-              <%= image_tag 'btn053_03.jpg',size:"100x30",class: "button-ok" %>
+              <%= image_tag 'btn053_03.jpg',size:"110x40",class: "button-ok" %>
               <span class='memo-text'>メモ</span>
             <% end %>
             </li> 
