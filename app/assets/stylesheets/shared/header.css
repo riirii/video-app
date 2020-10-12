@@ -12,15 +12,16 @@
   width: 100vw;
   /* padding: 2vh 10vw; */
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   /* flex-direction: column; */
 }
+
 .title{
   color: #fff;
   font-size: 45px;
   font-style:
-  height: 10vh;
+  /* height: 10vh; */
   width: 40vw;
   padding-left: 40px;
 }
@@ -35,7 +36,7 @@
   justify-content: space-between;
   align-items: center;
   height: 10vh;
-  }
+}
 
 .user-nickname{
   position: relative;
@@ -124,7 +125,7 @@
 
 
 
-.status-ng {
+.status-ng{
 display: flex;
 justify-content: center;
 align-items: center;
@@ -136,7 +137,6 @@ height: 10vh;
   position: relative;
   width: 25vw;
   height: 10vh;
-  
 }
 
 .button-in{
