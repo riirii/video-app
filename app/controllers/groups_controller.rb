@@ -4,6 +4,9 @@ class GroupsController < ApplicationController
   def select
   end
 
+  def video
+  end
+
 
   def index
   end
