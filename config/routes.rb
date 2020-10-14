@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   resources :groups, only: [:index, :show, :new, :create, :destroy, :edit] do
     collection do 
      get 'select'
+     get 'video'
     end
  end
 end
