@@ -17,4 +17,5 @@ Rails.application.config.assets.precompile += %w(
   groups/video.css 
   shared/header.css
   user/user.css
+  
 )
