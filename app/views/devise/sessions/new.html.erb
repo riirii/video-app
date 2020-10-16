@@ -10,7 +10,11 @@
     </div>
     <div class='account-page__inner--right user-form'>
       <%= form_with model: resource, as: resource_name, url: session_path(resource_name), local: true do |f|%>
-
+          <%# <%= devise_error_messages!%>
+          <div class='login-flash-message'>
+             <%= flash[:notice] %>
+             <%= flash[:alert] %>
+          </div>
         <%# <%= render 'shared/error_messages', model: f.object %> 
 
         <div class='field'>

@@ -1,5 +1,5 @@
 class GroupsController < ApplicationController
-  before_action :authenticate_user!, only: [:select, :index]
+  before_action :authenticate_user!, only: [:select, :index, :video]
 
   def select
   end
