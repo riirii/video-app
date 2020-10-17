@@ -1,3 +1,14 @@
+.group-room-frame{
+height: 90vh;;
+display: flex;
+justify-content: center;
+/* background-color: rgb(141, 138, 138); */
+}
+
+
+
+
+
 h1 {
   letter-spacing: 2px;
   font-size: 24px;
@@ -24,10 +35,11 @@ li {
 }
 
 .chat-room-form {
-  width: 980px;
-  margin: 60px auto;
+  height: 90vh;
+  width: 100%;
+  /* margin: 100px auto; */
   padding: 40px;
-  background-color: #fff;
+  background-color: rgb(199, 197, 197);
   border: 1px solid #ddd;
   border-radius: 5px;
   box-sizing: border-box;
