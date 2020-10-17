@@ -45,17 +45,23 @@
     color: #fff;
     width: 50%;
     height: 50vh;
-    
     font-family: Georgia, 'Times New Roman', Times, serif;
     position: relative;
-    font-weight: bold;
-    font-size: 20px;
+    
   } 
   
   .center{
     text-align: center;
+    font-weight: bold;
+    font-size: 20px;
   }
   
+  .center-exp{
+    text-align: center;
+    font-size: 17px;
+  }
+
+
   .content{
     position: absolute;
     top: 50%;

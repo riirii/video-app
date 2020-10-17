@@ -1,5 +1,4 @@
 .main-frame{
-  background-color: lightslategray;
   height:90vh;
   width:100%;
   display: flex;
@@ -7,7 +6,7 @@
 }
 
 .main-side{
-  background-color: lightslategray;
+  background-color: rgb(141, 138, 138);
   height: 90vh;
   width: calc(100vw - 80%);
   display: flex;
@@ -33,7 +32,7 @@
 }
 
 .main-center{
-  background-color: rgba(203, 216, 230, 0.322);
+  background-color: rgb(199, 197, 197);
   height :90vh;
   width: calc(100vw - 20%);
 }
