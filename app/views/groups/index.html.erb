@@ -1,0 +1,27 @@
+<%# <% content_for :css do %>
+    <%# <%= stylesheet_link_tag 'groups/index' %>
+<%# <% end %> 
+
+<%= render "shared/header" %>
+
+<h1>Group room</h1>
+<div id='messages'>
+  <%= render partial: "messages/message", collection: @messages %>
+</div>
+
+<%= label_tag :content, 'Say something:' %>
+<%= text_field_tag :content, nil, data: { behavior: 'room_speaker' } %>
+
+
+<img data-src="holder.js/200x100" alt="image"/>
+
+
+
+
+
+
+
+<%# 
+<div class ="main">
+  <div class ="main">
+</div> %>

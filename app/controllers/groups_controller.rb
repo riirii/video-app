@@ -9,6 +9,7 @@ class GroupsController < ApplicationController
 
 
   def index
+    @messages = Message.all
   end
 
   def new
