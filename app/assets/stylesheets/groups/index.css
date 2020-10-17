@@ -2,12 +2,39 @@
   background-color: lightslategray;
   height:90vh;
   width:100%;
+  display: flex;
+  justify-content: center;
 }
 
+.main-side{
+  background-color: lightslategray;
+  height: 90vh;
+  width: calc(100vw - 80%);
+  display: flex;
+  justify-content: center;
+}
 
+.group-new{
+  height:15vh;
+  width: 80%;
+  margin-top: 50px;
+  text-align: center;
+  /* border: solid 3px yellow; */
+  display: table; 
+}
 
-
+.table-cell{
+  display: table-cell; 
+  vertical-align: middle;
+  color: rgba(0, 0, 0, 0.678);
+  background-color: #fff;
+  font-size: large;
+  font-weight: bold;
+}
 
 .main-center{
-  background-color: lightcoral;
+  background-color: rgba(203, 216, 230, 0.322);
+  height :90vh;
+  width: calc(100vw - 20%);
 }
+

@@ -1,5 +1,5 @@
 class GroupsController < ApplicationController
-  before_action :authenticate_user!, only: [:select, :index, :video]
+  before_action :authenticate_user!, only: [:select, :video, :index, :new]
 
   def select
   end
@@ -13,7 +13,7 @@ class GroupsController < ApplicationController
   end
 
   def new
-    
+    @group = Group.new
   end
 
   def create
