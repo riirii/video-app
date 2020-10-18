@@ -1,7 +1,25 @@
 <%= render "shared/header" %>
 
-<h1>AjaxApp</h1>
-<%= form_with url:  "/posts", method: :post,id: "form" do |form| %>
-  <%= form.text_field :content %>
-  <%= form.submit '投稿する' , id: "submit" %>
+<div class="messages-room-frame">
+  <div class="messages-room-name">
+    <%= @group.name %>
+  </div>
+
+  <%= form_with model: @messages ,url:  group_messages_path, method: :post,id: "form" do |form| %>
+    <%= form.text_area :content ,class: "text-long" %>
+    <%= form.submit '投稿する' , id: "submit", class: "button-long"%>
+  <% end %>
+
+  <% @messages.each do |message| %>
+  <div class="message-main-text">
+    <div class="message-date">
+      投稿日時：<%= message.created_at %>
+    </div>
+    <div class="message-content">
+      <%= message.content %>
+    </div>
+  </div>
 <% end %>
+
+</div>
+

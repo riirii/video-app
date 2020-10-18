@@ -9,6 +9,6 @@ Rails.application.routes.draw do
      get 'select'
      get 'video'
     end
-    resources :messages, only: [:index]
+    resources :messages, only: [:index, :create]
   end
 end

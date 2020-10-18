@@ -37,3 +37,6 @@
   width: calc(100vw - 20%);
 }
 
+.group-name{
+  font-size: 25px;
+}

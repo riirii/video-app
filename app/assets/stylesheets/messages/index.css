@@ -1,0 +1,40 @@
+.messages-room-frame{
+  height:90vh;
+  width:100%;
+  background-color: rgb(199, 197, 197);
+  position: relative;
+}
+
+
+
+
+.messages-room-name{
+  letter-spacing: 2px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.text-long{
+  height:20vh;
+  width: 70%;
+  position: absolute;
+  left: 5%;
+  bottom: 5vh;
+  font-size: 25px;
+}
+
+.button-long{
+  height:20vh;
+  width: 20%;
+  position: absolute;
+  right: 5%;
+  bottom: 5vh;
+  background-color:  rgb(243, 243, 129);
+  font-size: large;
+}
+
+
+
+
+

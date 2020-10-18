@@ -13,13 +13,13 @@ class GroupsController < ApplicationController
   end
 
   def new
-    @group = Group.new
+    
   end
 
   def create
     @group = Group.new(new_group_params)
     if @group.save
-      redirect_to group_messages_path(@group.id)
+      redirect_to groups_path
     else 
       render :new
     end
