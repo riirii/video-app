@@ -7,6 +7,13 @@ require("@rails/ujs").start()
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
+require('jquery');
+require("../checked")
+require("../message")
+// require("hello_vue")
+// require("room.js")
+// require("../app")
+// require("../room")
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference

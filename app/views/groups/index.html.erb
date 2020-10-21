@@ -1,0 +1,33 @@
+<%# <% content_for :css do %>
+    <%# <%= stylesheet_link_tag 'groups/index' %>
+<%# <% end %> 
+
+<%= render "shared/header" %>
+
+<%# <h1>Group room</h1>
+<div id='messages'>
+  <%= render partial: "messages/message", collection: @messages %>
+<%# </div>
+
+<%= label_tag :content, 'Say something:' %>
+<%# <%= text_field_tag :content, nil, data: { behavior: 'room_speaker' } %> 
+
+
+
+<div class ="main-frame">
+  <div class ="main-side">
+    <div class ="group-new">
+      <%= link_to "グループ新規作成", new_group_path ,class: "table-cell" %>
+    </div>
+  </div>
+  <div class ="main-center">
+    <% current_user.groups.each do |group| %>
+      <div class="group-all">
+        <div class="group-name">
+          <%= link_to group.name, group_messages_path(group) %>
+        </div>
+      </div>
+  <% end %>
+  </div>
+  
+</div> 

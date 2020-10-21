@@ -1,0 +1,42 @@
+.main-frame{
+  height:90vh;
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+
+.main-side{
+  background-color: rgb(141, 138, 138);
+  height: 90vh;
+  width: calc(100vw - 80%);
+  display: flex;
+  justify-content: center;
+}
+
+.group-new{
+  height:15vh;
+  width: 80%;
+  margin-top: 50px;
+  text-align: center;
+  /* border: solid 3px yellow; */
+  display: table; 
+}
+
+.table-cell{
+  display: table-cell; 
+  vertical-align: middle;
+  color: rgba(0, 0, 0, 0.678);
+  background-color:  rgb(243, 243, 129);
+  font-size: large;
+  font-weight: bold;
+}
+
+.main-center{
+  background-color: rgb(207, 205, 205);
+  height :90vh;
+  width: calc(100vw - 20%);
+}
+
+.group-name{
+  font-size: 25px;
+}
