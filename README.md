@@ -80,7 +80,6 @@
 | Column  | Type       | Options                        |
 | ------- | ---------- | ------------------------------ |
 | content | text       |                                |
-| checked | boolean    |                                |
 | user    | references | null: false, foreign_key: true |
 | group   | references | null: false, foreign_key: true |
 
