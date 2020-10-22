@@ -9,11 +9,11 @@ class GroupsController < ApplicationController
 
 
   def index
-    @messages = Message.all
+    
   end
 
   def new
-    
+    @group = Group.new
   end
 
   def create

@@ -99,7 +99,7 @@
 }
 
 .flash-notice{
-  background-color: rgb(199, 197, 197);
+  background: radial-gradient(rgb(199, 197, 197), white);
   color:red;
   font-size: 30px;
   width: 100%;

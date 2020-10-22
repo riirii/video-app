@@ -13,7 +13,7 @@ class MessagesController < ApplicationController
       @message.save
       redirect_to action: :index
     else
-      puts flash.now[:notice] = "文字を入力してください"
+      # puts flash.now[:notice] = "文字を入力してください"
       render :index
     end
   end
@@ -35,7 +35,7 @@ class MessagesController < ApplicationController
   private
 
   def message_params
-    params.require(:message).permit(:content,).merge(user_id: current_user.id, group_id: params[:group_id])
+    params.require(:message).permit(:content).merge(user_id: current_user.id, group_id: params[:group_id])
   end
 
 

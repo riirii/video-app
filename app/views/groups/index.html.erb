@@ -20,14 +20,21 @@
       <%= link_to "グループ新規作成", new_group_path ,class: "table-cell" %>
     </div>
   </div>
-  <div class ="main-center">
-    <% current_user.groups.each do |group| %>
-      <div class="group-all">
-        <div class="group-name">
-          <%= link_to group.name, group_messages_path(group) %>
-        </div>
-      </div>
-  <% end %>
-  </div>
+
+  
+    <div class ="main-center">
+      <% if GroupUser.pluck(:user_id).include?(current_user.id) %>
+        <% GroupUser.all.where(user_id: current_user.id).each do |group| %>
+          <% Group.all.where(id: group.group_id).each do |group_name|%>
+            <div class="group-all">
+              <div class="group-name">
+                  <%= link_to group_name.name, group_messages_path(group.group_id) %>
+              </div>
+            </div>
+          <% end %>
+        <% end %>
+      <% end %>
+    </div>
+ 
   
 </div> 
