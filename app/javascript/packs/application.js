@@ -9,7 +9,6 @@ require("@rails/activestorage").start()
 require("channels")
 require('jquery');
 require("../checked")
-require("../message")
 // require("hello_vue")
 // require("room.js")
 // require("../app")
