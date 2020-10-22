@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   resources :users, only:  [:edit, :update]
   resources :groups, only: [:index, :new, :create, :destroy, :edit] do
+    
     collection do 
      get 'select'
      get 'video'
