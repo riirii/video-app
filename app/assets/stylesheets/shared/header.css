@@ -8,7 +8,9 @@
 
 }
 
-
+a{
+  color: black;
+}
 
 .top-page-header {
   background: linear-gradient(to right top, rgb(46, 45, 45), gray, rgb(46, 45, 45));
@@ -22,15 +24,20 @@
   /* flex-direction: column; */
 }
 
-.title-name{
-  color: #fff;
+.title-name a {
   font-size: 50px;
   height: 10vh;
   width: 40%;
-  padding-top: 7px;
+  align-items: center;
+  margin-top: 12px;
+  color: white;
 }
 
-.nav{
+.nav_sm{
+  display: none;
+}
+
+.nav_pc{
   height: 10vh;
   width: 60%;
 }
@@ -56,11 +63,13 @@
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     font-size: large;
+    color: black;
 }
 
 .log-out{
   position: relative;
   width: 12%;
+  
 }
 
 .logout-text{
@@ -72,6 +81,7 @@
   -ms-transform: translate(-50%, -50%);
   font-size: large;  	
   white-space: nowrap;
+  color: black;
 }
 
 .chat-room{
@@ -88,6 +98,7 @@
   -ms-transform: translate(-50%, -50%);
   white-space: nowrap;
   font-size: large; 
+  color: black;
 }
 
 .video-room{
@@ -104,6 +115,7 @@
   -ms-transform: translate(-50%, -50%);
   white-space: nowrap;
   font-size: large; 
+  color: black;
 }
 
 .memo-room{
@@ -120,6 +132,7 @@
   -ms-transform: translate(-50%, -50%);
   font-size: large; 
   white-space: nowrap;
+  color: black;
 }
 
 
@@ -200,3 +213,58 @@ a{
   text-decoration: none;
 }
 
+@media (max-width: 599px) {
+  .title-name{
+    color: #fff;
+    font-size: 35px;
+    height: 60px;
+    width: 60%;
+    /* margin-bottom: 5px; */
+  }
+  .nav_pc{
+    display:none;
+  }
+
+  #hamburger{
+  height: 60px;
+  width: 60px;
+  margin: 0 0 0 auto;
+  cursor: pointer;
+  /* background-color: transparent; */
+  background-color: red;
+  /* position: relative; */
+  }
+
+  .icon span {
+    position: absolute;       
+    left: 15px;               
+    width: 30px;              
+    height: 4px;              
+    background-color: white;  
+    border-radius: 8px;       
+    transition: ease 0.75s;  
+  }
+  .icon span:nth-of-type(1) {
+    top: 16px;
+  }
+  .icon span:nth-of-type(2) {
+    top: 28px;
+  }
+  .icon span:nth-of-type(3) {
+    bottom: 16px;
+  }
+  .close span:nth-of-type(1) {
+    transform: rotate(45deg); /*反時計回りに45度回転*/
+    top: 28px;
+  }
+
+  .close span:nth-of-type(2) {
+    opacity: 0;
+  }
+
+  .close span:nth-of-type(3) {
+      transform: rotate(-45deg); /*時計回りに45度回転*/
+      top: 28px;
+  }
+
+}

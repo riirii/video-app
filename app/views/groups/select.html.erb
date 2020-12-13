@@ -8,7 +8,7 @@
 <div class ="top-select">
   <div class = "select-main">
     <div class = "explanation">
-      <%= image_tag "155166_s.jpg" %>
+      <%= image_tag "155166_s.jpg" ,class: "sm-version"%>
     </div>
     <div class = "text-main">
       <ul class ="content">
@@ -25,14 +25,18 @@
         <%= image_tag "StockSnap_6DHV829ANC.jpg",class:"image" %>
         <span class = "chat-text">チャット機能</span>
         <div class = "chat-image">
+          <%= link_to groups_path, class: "chat-sm" do %>
           <%= image_tag "chat_messages_14395.png", class:"chat-icon" %>
+          <% end %>
         </div>
       </div>
       <div class = "video-function">
         <%= image_tag "3779255_m.jpg",class:"image" %>
         <span class = "video-text">ビデオ通話機能</span>
         <div class = "video-image">
+          <%= link_to video_groups_path, class: "video" do %>
           <%= image_tag "blue_video_camera_film_12421.png", class:"video-icon" %>
+          <% end %>
         </div>
       </div>
   </div>

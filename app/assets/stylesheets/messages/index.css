@@ -1,14 +1,14 @@
 .messages-room-frame{
   height:90vh;
   width:100%;
-  background: radial-gradient(rgb(199, 197, 197), white);
+  background: gainsboro;
   /* background-color: rgb(199, 197, 197); */
   position: relative;
 }
 
 
 .messages-room-name{
-  background: radial-gradient(rgb(247, 247, 56), white);
+  background: radial-gradient(gainsboro, white);
   /* background-color: rgb(141, 138, 138); */
   letter-spacing: 2px;
   font-size: 30px;

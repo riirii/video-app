@@ -7,7 +7,18 @@
     <%= link_to "Transcribe" ,root_path %>
       <%# <h1>Transcribe</h1> %>
   </div>
-  <div class='nav'>
+
+  <div class="nav_sm">
+    <ul>
+      <li><%= link_to edit_group_path(current_user.id), current_user.nickname %></li>
+      <li><%= link_to destroy_user_session_path, "ログアウト" %></li>
+      <li><%= link_to groups_path, "チャット" %></li>
+      <li><%= link_to video_groups_path, "ビデオ通話" %></li>
+      <li><%= link_to "#", "辞書" %></li>
+    </ul>
+  </div>
+
+  <div class='nav_pc'>
     <% if user_signed_in? %>
       <ul class='status-ok'>
         <div class ="user-nickname">
@@ -57,6 +68,15 @@
             </li> 
           </div>
         </div>
+
+        <div id="hamburger">
+          <div class="icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
       </ul>
     <% else %>
       <ul class='status-ng'>
