@@ -211,8 +211,58 @@ height: 10vh;
 
 a{
   text-decoration: none;
+} 
+
+@media (min-width: 900px){
+  .hamburger{
+    display:none;
+  }
 }
 
+@media (min-width: 600px)and (max-width: 899px) {
+
+  .title-name a {
+    font-size: 40px;
+    height: 10vh;
+    width: 40%;
+    align-items: center;
+    margin-top: 12px;
+    color: white;
+  }
+
+  .button-ok{
+    width:150%;
+  }
+  .hamburger{
+  display:none;
+}
+
+  .nickname-text{
+    font-size: 100%;
+  }
+
+  .logout-text{
+    font-size: 100%;
+  }
+
+  .chat-page{
+    font-size: 100%;
+  }
+
+  .video-page{
+    font-size: 100%;
+  }
+
+  .memo-text{
+    font-size: 100%;
+  }
+
+
+
+
+
+
+}
 @media (max-width: 599px) {
   .title-name{
     color: #fff;
@@ -225,46 +275,18 @@ a{
     display:none;
   }
 
-  #hamburger{
-  height: 60px;
-  width: 60px;
-  margin: 0 0 0 auto;
-  cursor: pointer;
-  /* background-color: transparent; */
-  background-color: red;
-  /* position: relative; */
+  .hamburger{
+    background-color: rgb(180, 176, 176);
+    height:132%;
   }
 
-  .icon span {
-    position: absolute;       
-    left: 15px;               
-    width: 30px;              
-    height: 4px;              
-    background-color: white;  
-    border-radius: 8px;       
-    transition: ease 0.75s;  
+  .nav-hidden{
+    display:none;
   }
-  .icon span:nth-of-type(1) {
-    top: 16px;
-  }
-  .icon span:nth-of-type(2) {
-    top: 28px;
-  }
-  .icon span:nth-of-type(3) {
-    bottom: 16px;
-  }
-  .close span:nth-of-type(1) {
-    transform: rotate(45deg); /*反時計回りに45度回転*/
-    top: 28px;
-  }
-
-  .close span:nth-of-type(2) {
-    opacity: 0;
-  }
-
-  .close span:nth-of-type(3) {
-      transform: rotate(-45deg); /*時計回りに45度回転*/
-      top: 28px;
+  
+  label{
+    cursor: pointer;
+    
   }
 
 }
